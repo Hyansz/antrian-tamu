@@ -2,7 +2,6 @@ const { sql } = require("@vercel/postgres");
 
 async function getData(req,res) {
     try {
-        
         if(req.method !== "GET") {
             return res.status(405).json({message:"Method tidak diperbolehkan"})
         }
